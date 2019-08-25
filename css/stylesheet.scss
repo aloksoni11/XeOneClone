@@ -1,0 +1,61 @@
+body,html{
+    height: 100%;
+    width: 100%;
+}
+.navbar-wrapper{
+    background-image: url(/images/arrow-slide2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    .font-300{
+        font-weight: 300;
+    }
+    .navbar{
+        .navbar-collapse{
+            .navbar-nav{
+                .nav-item{
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-right: 30px;
+                    a{
+                        &:hover{
+                            color: #00bcd4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .text-content{
+        padding-top: 235px;
+        .title-text{
+            font-size: 60px;
+            font-weight: 200;
+            height: 3.5rem;
+        }
+        h4{
+            font-size: 20px;
+            padding-top: 40px;
+        }
+    }
+}
+main{
+    .owl-carousel{
+        position: relative;
+        top: -5.5rem;
+        .owl-item{
+            background-color:skyblue;
+            padding: 20px;
+            &.active{
+                &.center{
+                    background-color: green;
+                    transform: translate3d( 10px);
+                }
+            }
+        }
+        .owl-dots{
+            display: none;
+        }
+    }
+}
